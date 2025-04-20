@@ -1,0 +1,119 @@
+/* Reset e base */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #003366;
+  color: white;
+  padding-bottom: 1rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.logo img {
+  height: 60px;
+  margin-right: 15px;
+}
+
+nav {
+  text-align: center;
+  background-color: #002244;
+  padding: 0.5rem 0;
+}
+
+nav a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Banner ajustado */
+.banner img {
+  display: block;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: #e6f0ff;
+  max-width: 45%;
+}
+
+/* Conteúdo principal */
+main {
+  padding: 2rem;
+  text-align: center;
+}
+
+.introducao h2 {
+  font-size: 1.8rem;
+  color: #003366;
+}
+
+.introducao p {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.chamada {
+  margin-top: 2rem;
+}
+
+.concursos-destaque {
+  margin-top: 2rem;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background-color: white;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: left;
+  max-width: 300px;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card h3 {
+  color: #003366;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.card strong {
+  color: #003366;
+}
+
+footer {
+  background: #ddd;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
