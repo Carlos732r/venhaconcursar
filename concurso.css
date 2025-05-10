@@ -5,7 +5,6 @@ body {
   color: #333;
 }
 
-/* Cabeçalho */
 header {
   background-color: #003366;
   color: white;
@@ -60,7 +59,6 @@ nav::-webkit-scrollbar {
   display: none;
 }
 
-/* Banner ajustado */
 .banner img {
   display: block;
   margin: 0 auto;
@@ -69,7 +67,6 @@ nav::-webkit-scrollbar {
   max-width: 45%;
 }
 
-/* Conteúdo principal */
 main {
   padding: 2rem;
   text-align: center;
@@ -130,11 +127,19 @@ main {
   color: #003366;
 }
 
-/* Rodapé */
 footer {
   background: #ddd;
   text-align: center;
   padding: 1rem;
   margin-top: 2rem;
 }
+
+@media (max-width: 600px) {
+  nav a {
+    margin: 0 8px;
+    padding: 0.4rem 0.6rem;
+    font-size: 0.85rem;
+  }
+}
+
 
