@@ -147,14 +147,15 @@ footer {
   }
 
   .nav-center {
-    flex-wrap: nowrap;
-    padding-right: 20px;
+    flex-wrap: nowrap; /* Impede a quebra de linha e mantém os itens lado a lado */
+    padding-right: 20px; /* Espaçamento à direita para evitar que os itens fiquem colados na borda */
   }
 
   nav a {
-    padding: 0.5rem 0.8rem;
-    font-size: 0.85rem;
+    padding: 0.5rem 0.8rem; /* Ajuste de padding para tornar os links mais compactos */
+    font-size: 0.85rem; /* Ajuste no tamanho da fonte para telas menores */
   }
+
 
   .banner img {
     max-width: 80%; 
