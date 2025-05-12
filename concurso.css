@@ -140,3 +140,21 @@ footer {
   margin-top: 2rem;
 }
 
+/* Ajuste para dispositivos móveis */
+@media (max-width: 768px) {
+  .nav-center {
+    flex-wrap: wrap; /* Permite que os itens quebrem em linhas no celular */
+    justify-content: center; /* Centraliza os itens */
+    padding: 0 10px; /* Adiciona espaçamento nas laterais */
+  }
+
+  nav a {
+    padding: 0.5rem 0.8rem; 
+    font-size: 0.85rem; 
+  }
+
+  .banner img {
+    max-width: 80%; 
+  }
+}
+
