@@ -94,18 +94,18 @@ footer {
 
 /* Ajustes para dispositivos móveis */
 @media (max-width: 768px) {
-  nav {
-    justify-content: flex-start; /* Alinha à esquerda no celular */
-  }
-
   .nav-center {
-    flex-wrap: nowrap; /* Impede a quebra de linha e mantém os itens lado a lado */
-    padding-right: 20px; /* Espaçamento à direita para evitar que os itens fiquem colados na borda */
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+    padding: 0 10px;
+    gap: 10px; /* reduz espaço entre os links no celular */
   }
 
   nav a {
-    padding: 0.2rem 0.5rem; /* Ajuste de padding para tornar os links mais compactos */
-    font-size: 0.75rem; /* Ajuste no tamanho da fonte para telas menores */
+    font-size: 0.75rem;
+    padding: 0.3rem 0.5rem;
+    white-space: nowrap;
   }
 }
 
