@@ -105,7 +105,7 @@ footer {
 
   nav a {
     padding: 0.5rem 0.8rem; /* Ajuste de padding para tornar os links mais compactos */
-    font-size: 0.85rem; /* Ajuste no tamanho da fonte para telas menores */
+    font-size: 0.75rem; /* Ajuste no tamanho da fonte para telas menores */
   }
 }
 
