@@ -32,14 +32,14 @@ nav {
   -webkit-overflow-scrolling: touch;
   box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.1);
   display: flex;
-  justify-content: center; /* Centraliza os itens */
+  justify-content: center;
 }
 
 .nav-center {
   display: inline-flex;
   gap: 20px;
-  min-width: auto; /* Remove a largura mínima fixa */
-  justify-content: center; /* Garante que os itens fiquem centralizados */
+  min-width: auto;
+  justify-content: center;
 }
 
 nav a {
@@ -143,22 +143,49 @@ footer {
 /* Ajuste para dispositivos móveis */
 @media (max-width: 768px) {
   nav {
-    justify-content: flex-start; /* Alinha à esquerda no celular */
+    justify-content: flex-start;
   }
 
   .nav-center {
-    flex-wrap: nowrap; /* Impede a quebra de linha e mantém os itens lado a lado */
-    padding-right: 20px; /* Espaçamento à direita para evitar que os itens fiquem colados na borda */
+    flex-wrap: nowrap;
+    padding-right: 20px;
   }
 
   nav a {
-    padding: 0.5rem 0.8rem; /* Ajuste de padding para tornar os links mais compactos */
-    font-size: 0.85rem; /* Ajuste no tamanho da fonte para telas menores */
+    padding: 0.5rem 0.8rem;
+    font-size: 0.85rem;
   }
 
-
   .banner img {
-    max-width: 80%; 
+    max-width: 80%;
   }
 }
 
+/* Menu de Estados */
+.menu-estados {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 10px;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.menu-estados a {
+  text-decoration: none;
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #0077cc;
+  font-weight: bold;
+  font-size: 14px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.menu-estados a:hover {
+  background-color: #0077cc;
+  color: white;
+}

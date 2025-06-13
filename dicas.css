@@ -107,3 +107,31 @@ footer {
   }
 }
 
+/* Menu de Estados */
+.menu-estados {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 10px;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.menu-estados a {
+  text-decoration: none;
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #0077cc;
+  font-weight: bold;
+  font-size: 14px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.menu-estados a:hover {
+  background-color: #0077cc;
+  color: white;
+}
