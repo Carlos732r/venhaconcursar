@@ -91,3 +91,47 @@ footer {
   margin-top: 2rem;
   border-top: 1px solid #ccc;
 }
+@media (max-width: 768px) {
+  nav {
+    justify-content: flex-start; /* Alinha à esquerda no celular */
+  }
+
+  .nav-center {
+    flex-wrap: nowrap; /* Impede a quebra de linha e mantém os itens lado a lado */
+    padding-right: 20px; /* Espaçamento à direita para evitar que os itens fiquem colados na borda */
+  }
+
+  nav a {
+    padding: 0.5rem 0.8rem; /* Ajuste de padding para tornar os links mais compactos */
+    font-size: 0.85rem; /* Ajuste no tamanho da fonte para telas menores */
+  }
+}
+
+/* Menu de Estados */
+.menu-estados {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 10px;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.menu-estados a {
+  text-decoration: none;
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #0077cc;
+  font-weight: bold;
+  font-size: 14px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.menu-estados a:hover {
+  background-color: #0077cc;
+  color: white;
+}

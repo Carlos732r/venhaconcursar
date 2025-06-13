@@ -38,6 +38,8 @@ nav {
 .nav-center {
   display: inline-flex;
   gap: 20px;
+  min-width: auto;
+  justify-content: center;
 }
 
 nav a {
@@ -136,4 +138,54 @@ footer {
   text-align: center;
   padding: 1rem;
   margin-top: 2rem;
+}
+
+/* Ajuste para dispositivos móveis */
+@media (max-width: 768px) {
+  nav {
+    justify-content: flex-start;
+  }
+
+  .nav-center {
+    flex-wrap: nowrap;
+    padding-right: 20px;
+  }
+
+  nav a {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.85rem;
+  }
+
+  .banner img {
+    max-width: 80%;
+  }
+}
+
+/* Menu de Estados */
+.menu-estados {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 10px;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.menu-estados a {
+  text-decoration: none;
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #0077cc;
+  font-weight: bold;
+  font-size: 14px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.menu-estados a:hover {
+  background-color: #0077cc;
+  color: white;
 }
