@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora - Venha Concursar</title>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3566665507548192" crossorigin="anonymous"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EF7GF1LGNW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-EF7GF1LGNW');
+  </script>
+  <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"></script>
+  <link rel="icon" href="https://www.venhaconcursar.com.br/caminho/para/o/favicon.png" type="image/png" sizes="16x16" />
+  <meta name="google-site-verification" content="61gMdzGGUsq2mAVRkBTwMGoAS9xNVae1QoLSiPkbxDU" />
+  <meta name="msvalidate.01" content="381CE43A4C71D34AA74E0FBACBA16EFD" />
+  <meta name="description" content="Calculadora de operações básicas - Venha Concursar" />
+  <meta name="keywords" content="calculadora, operações matemáticas, concursos públicos, venha concursar" />
+  <meta name="author" content="Carlos Henrique Nascimento Borges" />
+  <link rel="stylesheet" href="concurso.css" />
+  <style>
+    .calculadora-container {
+      max-width: 400px;
+      margin: 30px auto;
+      padding: 15px;
+      border: 2px solid #003366;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+      font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+    }
+
+    .display {
+      width: 100%;
+      height: 50px;
+      text-align: right;
+      padding: 10px;
+      font-size: 1.5rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      background-color: #eef6ff;
+      box-sizing: border-box;
+    }
+
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+    }
+
+    .buttons button {
+      padding: 15px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      background-color: #ddd;
+      cursor: pointer;
+    }
+
+    .buttons button:hover {
+      background-color: #ccc;
+    }
+
+    .buttons .igual {
+      background-color: #003366;
+      color: white;
+    }
+
+    .buttons .igual:hover {
+      background-color: #0055aa;
+    }
+
+    .buttons .operador {
+      background-color: #c0c0c0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #f1f1f1;
+      margin-top: 40px;
+    }
+
+    footer a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #003366;
+    }
+  </style>
+</head>
+<body>
+  <amp-auto-ads type="adsense" data-ad-client="ca-pub-3566665507548192"></amp-auto-ads>
+
+  <header>
+    <div class="logo">
+      <img src="logo.png.png" alt="Logo do site" />
+      <h1>Venha Concursar</h1>
+    </div>
+    <nav>
+      <div class="nav-center">
+        <a href="index.html">Início</a>
+        <a href="concursos.html">Concursos</a>
+        <a href="dicas.html">Dicas</a>
+        <a href="calculadora.html">Calculadora</a>
+        <a href="sobre.html">Sobre nós</a>
+        <a href="contato.html">Contato</a>
+        
+      </div>
+    </nav>
+  </header>
+
+  <div class="menu-estados">
+    <a href="nacional.html">NACIONAL</a>
+    <a href="ac.html">AC</a>
+    <a href="al.html">AL</a>
+    <a href="am.html">AM</a>
+    <a href="ap.html">AP</a>
+    <a href="ba.html">BA</a>
+    <a href="ce.html">CE</a>
+    <a href="df.html">DF</a>
+    <a href="es.html">ES</a>
+    <a href="go.html">GO</a>
+    <a href="ma.html">MA</a>
+    <a href="mg.html">MG</a>
+    <a href="ms.html">MS</a>
+    <a href="mt.html">MT</a>
+    <a href="pa.html">PA</a>
+    <a href="pb.html">PB</a>
+    <a href="pe.html">PE</a>
+    <a href="pi.html">PI</a>
+    <a href="pr.html">PR</a>
+    <a href="rj.html">RJ</a>
+    <a href="rn.html">RN</a>
+    <a href="ro.html">RO</a>
+    <a href="rr.html">RR</a>
+    <a href="rs.html">RS</a>
+    <a href="sc.html">SC</a>
+    <a href="se.html">SE</a>
+    <a href="sp.html">SP</a>
+    <a href="to.html">TO</a>
+  </div>
+
+  <!-- Título azul fora da calculadora -->
+  <h2 style="color: #003366; text-align: center; font-family: 'Segoe UI', Roboto, Arial, sans-serif; margin-top: 30px;">
+    Aproveite enquanto vê as notícias do concurso para estudar e usar a calculadora se necessário
+  </h2>
+
+  <div class="calculadora-container">
+    <input type="text" id="display" class="display" placeholder="0" />
+
+    <div class="buttons">
+      <button onclick="clearDisplay()">C</button>
+      <button onclick="backspace()">⌫</button>
+      <button onclick="percent()">%</button>
+      <button class="operador" onclick="insert('/')">÷</button>
+
+      <button onclick="insert('7')">7</button>
+      <button onclick="insert('8')">8</button>
+      <button onclick="insert('9')">9</button>
+      <button class="operador" onclick="insert('*')">×</button>
+
+      <button onclick="insert('4')">4</button>
+      <button onclick="insert('5')">5</button>
+      <button onclick="insert('6')">6</button>
+      <button class="operador" onclick="insert('-')">−</button>
+
+      <button onclick="insert('1')">1</button>
+      <button onclick="insert('2')">2</button>
+      <button onclick="insert('3')">3</button>
+      <button class="operador" onclick="insert('+')">+</button>
+
+      <button onclick="insert('0')">0</button>
+      <button onclick="insert('.')">,</button>
+      <button onclick="calculateSqrt()">√</button>
+      <button class="igual" onclick="calculate()">=</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Venha Concursar. Todos os direitos reservados.</p>
+    <a href="politica-privacidade.html">Política de Privacidade</a>
+    <a href="termo.html">Termo de uso</a>
+  </footer>
+
+  <script>
+    const display = document.getElementById('display');
+
+    function insert(num) {
+      display.value += num;
+    }
+
+    function clearDisplay() {
+      display.value = '';
+    }
+
+    function backspace() {
+      display.value = display.value.slice(0, -1);
+    }
+
+    function calculate() {
+      try {
+        let expression = display.value.replace(',', '.');
+        let result = eval(expression);
+
+        if (expression.includes('/100*')) {
+          display.value = parseFloat(result).toFixed(2);
+        } else {
+          display.value = result;
+        }
+      } catch (e) {
+        display.value = 'Erro';
+      }
+    }
+
+    function calculateSqrt() {
+      let value = parseFloat(display.value);
+      if (!isNaN(value)) {
+        display.value = Math.sqrt(value).toFixed(2);
+      } else {
+        display.value = 'Erro';
+      }
+    }
+
+    function percent() {
+      display.value += '/100*';
+    }
+
+    display.addEventListener('keydown', function (event) {
+      if (event.key === 'Enter') {
+        event.preventDefault();
+        calculate();
+      } else if (!/[0-9+\-*/().,]/.test(event.key) && event.key.length === 1 && event.key !== 'Backspace') {
+        event.preventDefault();
+      }
+    });
+  </script>
+</body>
+</html>
